@@ -1,10 +1,14 @@
 import {View, Text} from 'react-native'
 
+import Buttons from '../../components/styled/Buttons'
+import ScreenLayout from '../../components/layouts/ScreenLayout'
+
 const HomeScreen = () => {
   return (
-    <View>
+    <ScreenLayout>
       <Text className=" text-white ">HomeScreen</Text>
-    </View>
+      <Buttons text={'texto'} />
+    </ScreenLayout>
   )
 }
 

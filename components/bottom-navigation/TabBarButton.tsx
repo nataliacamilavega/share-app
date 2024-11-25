@@ -1,19 +1,11 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native'
+import {TouchableOpacity, View} from 'react-native'
 import {BottomTabBarButtonProps} from '@react-navigation/bottom-tabs'
-
-import {Theme} from '../../themes/Theme'
 
 const TabBarButton = (props: BottomTabBarButtonProps) => {
   return (
     <TouchableOpacity {...props}>
-      <Text
-        className=" text-white " 
-
-      >
-      </Text>
       <View
-
-        className=" bg-slate-600  border-2 border-red-500 "
+        className={` bg-primary-light border-2 w-full mb-2 ${props?.accessibilityState?.selected ? ' border-secondary-main' : 'border-transparent'} `}
       />
       {props.children}
     </TouchableOpacity>
@@ -21,5 +13,3 @@ const TabBarButton = (props: BottomTabBarButtonProps) => {
 }
 
 export default TabBarButton
-
-const styles = StyleSheet.create({})

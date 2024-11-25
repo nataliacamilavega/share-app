@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import TabBarButton from '../../components/bottom-navigation/TabBarButton'
+import {Theme} from '../../theme/Theme'
 
 export default function TabLayout() {
   return (
@@ -16,14 +17,11 @@ export default function TabLayout() {
       initialRouteName="index"
       screenOptions={{
         headerStyle: {
-          backgroundColor: '#121212',
-        },
-        contentStyle: {
-          backgroundColor: '#121212', // Color de fondo global
+          backgroundColor: Theme.colors.primary.main,
         },
         tabBarActiveTintColor: 'white',
         tabBarStyle: {
-          backgroundColor: '#121212',
+          backgroundColor: Theme.colors.primary.main,
         },
         tabBarButton: (props) => <TabBarButton {...props} />,
       }}

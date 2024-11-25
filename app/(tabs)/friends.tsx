@@ -1,13 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native'
+import {Text} from 'react-native'
+
+import ScreenLayout from '../../components/layouts/ScreenLayout'
 
 const Friends = () => {
   return (
-    <View>
+    <ScreenLayout>
       <Text>Friends</Text>
-    </View>
+    </ScreenLayout>
   )
 }
 
 export default Friends
-
-const styles = StyleSheet.create({})
