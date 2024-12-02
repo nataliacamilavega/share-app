@@ -6,7 +6,6 @@ const Layout = () => {
     <Stack
       screenOptions={{
         headerShown: false,
-        // animation: 'slide_from_right',
         contentStyle: {
           backgroundColor: '#121212', // Color de fondo global
         },

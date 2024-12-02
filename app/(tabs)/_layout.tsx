@@ -10,7 +10,7 @@ export default function TabLayout() {
       initialRouteName="index"
       screenOptions={{
         headerStyle: {
-          backgroundColor: Theme.colors.primary.main,
+          backgroundColor: Theme.colors.primary.tint,
         },
         headerTintColor: 'white',
         tabBarActiveTintColor: 'white',
